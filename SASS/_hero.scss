@@ -1,0 +1,26 @@
+.hero{
+    display: flex;
+    background-color:rgb(243, 242, 242);    
+}
+
+.hero_content{
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;
+    padding: 35px;
+    gap: 25px;    
+}
+
+.hero_txt{
+    display: inline-block;
+    text-align: center;
+}
+
+.hero_txt h2{
+    padding: 5px;
+}
+
+.hero_txt p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
