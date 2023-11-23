@@ -1,40 +1,35 @@
-@import "header";
-@import "hero";
-@import "operation";
-@import "restaurants";
-@import "footer";
-@import "cards";
-@import "button";
-
+@import "header", "hero", "operation", "restaurants", "footer", "cards", "button", "banner";
 
 
 * {
     font-family: 'Roboto';
 }
 
-:root{
+:root {
     --main-color: #9356DC;
     --second-color: #FF79DA;
     --tertia-color: #99E2D0;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     margin: 0;
 }
 
-.main-container{
+.main-container {
     width: 100%;
     max-width: 768px;
     box-sizing: border-box;
 }
 
-h1{
+h1 {
     font-family: 'Shrikhand';
+    font-size: 28px;
+    font-weight: 400;
 }
 
-h2{
+h2 {
     font-size: 24px;
     font-weight: 700;
     margin: 5px;
@@ -48,7 +43,7 @@ p {
     margin: 0;
 }
 
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
