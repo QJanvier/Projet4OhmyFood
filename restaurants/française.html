@@ -3,29 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu-La palette du goût</title>
+    <title>Menu-À la française</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
     <div class="main-container">
         <header>
-            <div class="logo">
-                <img src="../Images_et_textes_Ohmyfood/images/logo/ohmyfood.png" alt="logo">
-            </div>
-            <div class="return">
-                <button>
-                    <a href="../index.html"></a>
-                    <i class="fa-solid fa-arrow-left"></i>
-                </button>
+            <div class="head_menu">
+                <div class="return">
+                    <button onclick="history.back()"><i class="fa-solid fa-arrow-left"></i></button>
+                </div>
+                <div class="logo_header sec_header">
+                    <img src="../Images_et_textes_Ohmyfood/images/logo/ohmyfood.png" alt="logo">
+                </div>
             </div>
         </header>
-        <main></main>
+        <main>
+            <section class="banner">
+                <div class="banner_img">
+                    <img src="../Images_et_textes_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="bannière palette">
+                </div>
+            </section>
+            <section class="menu">
+                <div class="title">
+                    <h1>À la française</h1>
+                    <i class="fa-regular fa-heart fa-xl"></i>
+                </div>
+                <div class="dishes">
+                    <h2>ENTRÉES</h2>
+                    <article class="card_options">
+                        <div class="options_content">
+                            <div class="options_txt">
+                                <h3>Tartare de poulpe acidulé</h3>
+                                <p>Aux zestes d'orange</p>
+                            </div>
+                            <div class="price">
+                                <p>25 €</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card_options">
+                        <div class="options_content">
+                            <div class="options_txt">
+                                <h3>Velouté de légumes d'antan</h3>
+                                <p>Carotte, panais, topinambour</p>
+                            </div>
+                            <div class="price">
+                                <p>35 €</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card_options">
+                        <div class="options_content">
+                            <div class="options_txt">
+                                <h3>Soupe à l'oignon</h3>
+                                <p>Revisitée</p>
+                            </div>
+                            <div class="price">
+                                <p>20 €</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="dishes">
+                    <h2>PLATS</h2>
+                    <article class="card_options">
+                        <div class="options_content">
+                            <div class="options_txt">
+                                <h3>Coquilles Saint-Jacques</h3>
+                                <p>Accompagnées d'une purée de panais</p>
+                            </div>
+                            <div class="price">
+                                <p>40 €</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card_options">
+                        <div class="options_content">
+                            <div class="options_txt">
+                                <h3>Magret de canard</h3>
+                                <p>Et parmentier de pommes de terre</p>
+                            </div>
+                            <div class="price">
+                                <p>35 €</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card_options">
+                        <div class="options_content">
+                            <div class="options_txt">
+                                <h3>Pigeonneau d'Ille-et-Vilaine</h3>
+                                <p>Sur son lit de gnocchis aux légumes</p>
+                            </div>
+                            <div class="price">
+                                <p>44 €</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="dishes">
+                    <h2>DESSERTS</h2>
+                    <article class="card_options">
+                        <div class="options_content">
+                            <div class="options_txt">
+                                <h3>Pétales de violettes glacés</h3>
+                                <p>Et purée de noisettes</p>
+                            </div>
+                            <div class="price">
+                                <p>18 €</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card_options">
+                        <div class="options_content">
+                            <div class="options_txt">
+                                <h3>Fondant au chocolat</h3>
+                                <p>Revisité</p>
+                            </div>
+                            <div class="price">
+                                <p>22 €</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card_options">
+                        <div class="options_content">
+                            <div class="options_txt">
+                                <h3>Millefeuille croustillant</h3>
+                                <p>Myrtilles et pâte d'amande</p>
+                            </div>
+                            <div class="price">
+                                <p>23 €</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="order">
+                    <input class="btn" type="button" value="Commander"/>
+                </div>
+            </section>
+        </main>
         <footer>
             <section class="footer">
                 <div class="footer_box">

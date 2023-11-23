@@ -1,13 +1,24 @@
+.head_menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo_header {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 15px;
 }
-
 .logo_header img {
   width: auto;
   height: 30px;
+}
+
+.sec_header {
+  display: flex;
+  justify-content: left;
+  width: 95%;
 }
 
 .location {
@@ -19,7 +30,20 @@
   height: 50px;
   font-weight: 500;
   font-size: 16px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px inset;
+}
+
+.return {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+.return button {
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: white;
+  font-size: 25px;
 }
 
 .hero {
@@ -190,6 +214,11 @@ footer .footer_box {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 }
 
+.banner .banner_img img {
+  object-fit: cover;
+  width: 100%;
+}
+
 * {
   font-family: "Roboto";
 }
@@ -214,6 +243,8 @@ body {
 
 h1 {
   font-family: "Shrikhand";
+  font-size: 28px;
+  font-weight: 400;
 }
 
 h2 {
