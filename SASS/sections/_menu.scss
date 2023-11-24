@@ -1,0 +1,60 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(243, 242, 242);
+    border-radius: 25px 25px 0px 0px;
+    padding: 15px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.all_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.dishes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    h2 {
+        margin: 0;
+        font-weight: 300;
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    p {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .price {
+        
+        p {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}
+
+.order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+
+    .btn {
+        padding: 15px 45px 15px 45px;
+    }
+}
