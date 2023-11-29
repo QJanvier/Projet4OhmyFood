@@ -39,3 +39,31 @@ footer{
 .link_font p{
     font-weight: 550;
 }
+
+@media (min-width: 769px) {
+    
+    footer {
+        padding: 50px;
+        padding-bottom: 25px;
+    }
+
+
+    footer .footer_box {
+        flex-direction: row-reverse;
+        align-items: end;
+        justify-content: end;
+        justify-content: space-between;
+
+    }
+
+    .logo_footer h4 {
+        padding: 0;
+    }
+
+    .footer_link {
+        flex-direction: row;
+        width: 85%;
+        justify-content: end;
+
+    }
+}

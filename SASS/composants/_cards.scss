@@ -7,6 +7,7 @@
 
 .card {
     background-color: white;
+    position: relative;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
@@ -29,7 +30,7 @@
 .card_txt {
     width: 50%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: left
 }
 
@@ -37,8 +38,44 @@
     margin: 0
 }
 
-.like i {
+.fav i {
+    display: flex;
+    align-items: center;
     width: 22px;
     height: 21px;
     padding: 10px;
+}
+
+.stamp {
+    background: var(--tertia-color);
+    color: #008766;
+    padding: 5px 15px ;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 550;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+
+@media (min-width: 900px) {
+    
+    .card_menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card_set {
+        width: 45%;
+    }
+}
+
+
+@media (min-width: 1025px) {
+
+    .card_menu {
+        gap: 60px;
+    }
 }

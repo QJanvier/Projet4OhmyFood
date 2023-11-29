@@ -45,3 +45,17 @@
         color: grey;
     }
 }
+
+
+
+@media (min-width: 769px) {
+
+    .panel {
+        padding: 25px;
+    }
+
+    .operation_content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

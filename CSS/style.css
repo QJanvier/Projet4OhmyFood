@@ -1,3 +1,8 @@
+.like:active {
+  color: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+}
+
 .head_menu {
   display: flex;
   align-items: center;
@@ -48,12 +53,15 @@
 
 .hero {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 15px 15px 15px;
   background-color: rgb(243, 242, 242);
 }
 
 .hero_content {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   padding: 25px 35px 35px 35px;
   gap: 25px;
@@ -71,6 +79,11 @@
 .hero_txt p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.btn_box {
+  display: flex;
+  justify-content: center;
 }
 
 .operation {
@@ -117,6 +130,15 @@
   color: grey;
 }
 
+@media (min-width: 769px) {
+  .panel {
+    padding: 25px;
+  }
+  .operation_content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .restaurants {
   display: flex;
   flex-direction: column;
@@ -163,6 +185,26 @@ footer .footer_box {
   font-weight: 550;
 }
 
+@media (min-width: 769px) {
+  footer {
+    padding: 50px;
+    padding-bottom: 25px;
+  }
+  footer .footer_box {
+    flex-direction: row-reverse;
+    align-items: end;
+    justify-content: end;
+    justify-content: space-between;
+  }
+  .logo_footer h4 {
+    padding: 0;
+  }
+  .footer_link {
+    flex-direction: row;
+    width: 85%;
+    justify-content: end;
+  }
+}
 .menu {
   display: flex;
   position: relative;
@@ -245,6 +287,7 @@ footer .footer_box {
 
 .card {
   background-color: white;
+  position: relative;
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
@@ -267,7 +310,7 @@ footer .footer_box {
 .card_txt {
   width: 50%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: left;
 }
 
@@ -275,12 +318,41 @@ footer .footer_box {
   margin: 0;
 }
 
-.like i {
+.fav i {
+  display: flex;
+  align-items: center;
   width: 22px;
   height: 21px;
   padding: 10px;
 }
 
+.stamp {
+  background: var(--tertia-color);
+  color: #008766;
+  padding: 5px 15px;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 550;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+@media (min-width: 900px) {
+  .card_menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card_set {
+    width: 45%;
+  }
+}
+@media (min-width: 1025px) {
+  .card_menu {
+    gap: 60px;
+  }
+}
 .btn {
   color: white;
   background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
@@ -289,6 +361,24 @@ footer .footer_box {
   border: none;
   font-size: 16px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  transition: all 0.4s ease-in-out;
+}
+.btn:hover {
+  transition: all 0.4s ease-in-out;
+  animation: infinite 0.5s alternate;
+  animation-direction: alternate;
+  opacity: 0.75;
+}
+@keyframes sliding {
+  from {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(-10px);
+  }
+  to {
+    transform: translate(0);
+  }
 }
 
 .banner_img img {
@@ -340,7 +430,7 @@ body {
 
 .main-container {
   width: 100%;
-  max-width: 768px;
+  max-width: 1440px;
   box-sizing: border-box;
 }
 

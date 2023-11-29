@@ -1,3 +1,4 @@
+@import "../SASS/Keyframes/buttonani", "../SASS/Keyframes/likeani", "../SASS/mediaqueries/tablette";
 @import "../SASS/sections/header", "../SASS/sections/hero", "../SASS/sections/operation", "../SASS/sections/restaurants", "../SASS/sections/footer", "../SASS/sections/menu",
  "../SASS/composants/cards", "../SASS/composants/button", "../SASS/composants/banner", "../SASS/composants/dishes";
 
@@ -20,7 +21,7 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 768px;
+    max-width: 1440px;
     box-sizing: border-box;
 }
 
@@ -49,3 +50,9 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+// @media (min-width: 769px) {
+//     body {
+//      padding: 0;
+//     }
+// }
