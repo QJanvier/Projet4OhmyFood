@@ -1,0 +1,13 @@
+@mixin liked {
+    color: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+    background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+}
+
+
+.like {
+
+    &:active {
+        @include liked;
+    }
+    
+}
