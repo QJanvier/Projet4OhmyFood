@@ -1,4 +1,4 @@
-.hero{
+.hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,7 +6,7 @@
     background-color:rgb(243, 242, 242);    
 }
 
-.hero_content{
+.hero_content {
     display: flex;
     flex-direction: column;  
     justify-content: center;
@@ -14,16 +14,16 @@
     gap: 25px;    
 }
 
-.hero_txt{
+.hero_txt {
     display: inline-block;
     text-align: center;
 }
 
-.hero_txt h2{
+.hero_txt h2 {
     padding: 5px;
 }
 
-.hero_txt p{
+.hero_txt p {
     margin-top: 0;
     margin-bottom: 0;
 }

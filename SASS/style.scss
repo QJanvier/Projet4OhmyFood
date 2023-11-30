@@ -25,6 +25,11 @@ body {
     box-sizing: border-box;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     font-family: 'Shrikhand';
     font-size: 28px;
@@ -51,8 +56,11 @@ a {
     text-decoration: none;
 }
 
-// @media (min-width: 769px) {
-//     body {
-//      padding: 0;
-//     }
-// }
+@media (min-width: 1025px) {
+
+    .main_menu {
+        align-items: center;
+        
+    }
+}
+

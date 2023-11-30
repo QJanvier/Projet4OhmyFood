@@ -2,8 +2,12 @@
     display: flex;
     flex-direction: column;
     gap: 17px;
+    
 }
 
+.card_set {
+    max-width: 550px;
+}
 
 .card {
     background-color: white;
@@ -59,17 +63,31 @@
 }
 
 
-@media (min-width: 900px) {
+@media (min-width: 500px ) {
     
     .card_menu {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+
+        align-items: center;
+        
+        .card_set {
+            width: 100%;
+            min-width: 420px;
+            max-width: 550px;
+        }
     }
 
-    .card_set {
-        width: 45%;
+};
+
+@media (min-width: 769px) {
+    
+    .card_menu {
+        
+        .card_set {
+            min-width: 350px;
+            max-width: 420px;
+        }
     }
+
 }
 
 
@@ -77,5 +95,14 @@
 
     .card_menu {
         gap: 60px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .card_set {
+            width: 45%;
+            min-width: 420px;
+            max-width: 490px;
+        }
     }
 }

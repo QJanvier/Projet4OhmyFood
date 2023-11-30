@@ -1,6 +1,15 @@
+.dishes_options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
 .card_options {
     display: flex;
     background-color: white;
+    min-width: 320px;
+    max-width: 634px;
     border-radius: 20px;
     padding: 13px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -26,5 +35,24 @@
             
         }
 
+    }
+}
+
+@media (max-width: 365px) {
+    .card_options {
+        min-width: 150px;
+    }
+}
+
+
+@media (min-width: 769px) {
+
+    .dishes_options {
+        width: 100%;
+        align-items: center;
+
+        .card_options {
+            min-width: 634px;
+        }
     }
 }
