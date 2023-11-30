@@ -1,9 +1,15 @@
 .banner_img {
 
     img {
-         object-fit: cover;
+        object-fit: cover;
         width: 100%;
-        height: 275px;
+        max-height: 275px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .banner_img {
+        width: 100%;
     }
 }
 
