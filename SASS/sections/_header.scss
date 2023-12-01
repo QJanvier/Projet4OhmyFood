@@ -30,11 +30,24 @@
     align-items: center;
     justify-content: center;
     background-color: #EAEAEA;
-    gap: 17px;
     height: 50px;
     font-weight: 500;
     font-size: 16px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px inset;
+}
+
+.search_form {
+    display: flex;
+    max-width: 130px;
+    gap: 17px;
+    
+    .search_holder {
+        display: flex;
+        border: 0;
+        background-color: transparent;
+        font-size: 16px;
+        font-weight: 550;
+    }
 }
 
 
