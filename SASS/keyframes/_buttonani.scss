@@ -1,13 +1,17 @@
-@keyframes sliding {
+@keyframes vibrate {
     
     from {
-        transform: translate(0);
+        top: 0;
+        left: 0;
     }
 
     50% {
-        transform: translate(-10px);
+        top: -2px;
+        left: -1px;
     }
     to {
-        transform: translate(0);
+        top: 0;
+        left: 0;
     }
 }
+
