@@ -1,3 +1,17 @@
+@keyframes vibrate {
+  from {
+    top: 0;
+    left: 0;
+  }
+  50% {
+    top: -2px;
+    left: -1px;
+  }
+  to {
+    top: 0;
+    left: 0;
+  }
+}
 .like:active {
   color: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
@@ -469,10 +483,12 @@ footer .footer_box {
   transition: all 0.4s ease-in-out;
 }
 .btn:hover {
-  animation-name: sliding;
-  transition: all 0.4s ease-in-out;
-  animation: infinite 0.5s alternate;
   opacity: 0.75;
+}
+.btn:hover span {
+  position: relative;
+  animation: vibrate 0.5s alternate;
+  transition: all 0.4s ease-in-out;
 }
 
 .banner_img img {
