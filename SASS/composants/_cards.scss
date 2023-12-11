@@ -7,6 +7,7 @@
 
 .card_set {
     max-width: 550px;
+    position: relative;
 }
 
 .card {
@@ -42,12 +43,16 @@
     margin: 0
 }
 
-.fav i {
+.fav { 
+    position: absolute;
+    z-index: auto;
+    right: 15px;
+
+    svg {
     display: flex;
     align-items: center;
-    width: 22px;
-    height: 21px;
     padding: 10px;
+    }
 }
 
 .stamp {
