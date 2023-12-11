@@ -1,0 +1,31 @@
+#gradient-vertical {
+    --color-stop-1: #9356dc;
+    --color-stop-2:  #ff79da;
+}
+
+
+
+.like {
+
+    .empty_heart {
+
+        &:hover {
+            fill: url(#gradient-vertical) gray;
+            stroke: url(#gradient-vertical) gray;
+        }
+    }
+
+    
+}
+
+.fav {
+
+    .empty_heart {
+
+        &:hover {
+            fill: url(#gradient-vertical) gray;
+            stroke: url(#gradient-vertical) gray;
+        }
+    }
+}
+

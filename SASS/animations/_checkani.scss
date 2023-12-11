@@ -1,0 +1,31 @@
+.check {
+    display: none;
+}
+
+.card_options {
+
+    &:hover {
+        
+        .options_txt {
+            
+
+            h3 {
+                text-overflow: ellipsis;
+                max-width: 220px;
+            }
+
+            p {
+                text-overflow: ellipsis;
+                max-width: 220px;
+            }
+        }
+
+        .check {
+            display: block;
+            animation: alternate;
+            transition: all 1s ease-in-out;
+            
+        }
+    
+    }
+}

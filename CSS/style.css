@@ -12,9 +12,37 @@
     left: 0;
   }
 }
-.like:active {
-  color: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
-  background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+#gradient-vertical {
+  --color-stop-1: #9356dc;
+  --color-stop-2: #ff79da;
+}
+
+.like .empty_heart:hover {
+  fill: url(#gradient-vertical) gray;
+  stroke: url(#gradient-vertical) gray;
+}
+
+.fav .empty_heart:hover {
+  fill: url(#gradient-vertical) gray;
+  stroke: url(#gradient-vertical) gray;
+}
+
+.check {
+  display: none;
+}
+
+.card_options:hover .options_txt h3 {
+  text-overflow: ellipsis;
+  max-width: 220px;
+}
+.card_options:hover .options_txt p {
+  text-overflow: ellipsis;
+  max-width: 220px;
+}
+.card_options:hover .check {
+  display: block;
+  animation: alternate;
+  transition: all 1s ease-in-out;
 }
 
 .head_menu {
@@ -278,7 +306,7 @@ footer .footer_box {
   position: relative;
   padding: 10px 0px 15px 0px;
 }
-.title i {
+.title .like {
   position: absolute;
   right: 20px;
 }
@@ -327,6 +355,21 @@ footer .footer_box {
 .dishes .price p {
   font-size: 18px;
   font-weight: 700;
+}
+
+.check {
+  background-color: var(--tertia-color);
+  border: none;
+  border-radius: 0 25% 25% 0;
+  margin-left: 5px;
+  min-width: 59px;
+  min-height: 71px;
+}
+.check i {
+  border-radius: 50%;
+  background-color: white;
+  padding: 2px;
+  color: var(--tertia-color);
 }
 
 .order {
@@ -388,6 +431,7 @@ footer .footer_box {
 
 .card_set {
   max-width: 550px;
+  position: relative;
 }
 
 .card {
@@ -423,11 +467,14 @@ footer .footer_box {
   margin: 0;
 }
 
-.fav i {
+.fav {
+  position: absolute;
+  z-index: auto;
+  right: 15px;
+}
+.fav svg {
   display: flex;
   align-items: center;
-  width: 22px;
-  height: 21px;
   padding: 10px;
 }
 
@@ -510,24 +557,33 @@ footer .footer_box {
 
 .card_options {
   display: flex;
+  position: relative;
   background-color: white;
+  min-height: 71px;
+  max-height: 71px;
   min-width: 320px;
   max-width: 634px;
   border-radius: 20px;
-  padding: 13px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 .card_options .options_content {
   display: flex;
   justify-content: space-between;
   align-items: end;
+  padding: 13px;
   width: 100%;
 }
 .card_options .options_content .options_txt {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+  display: block;
   width: 100%;
+}
+.card_options .options_content .options_txt h3 {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.card_options .options_content .options_txt p {
+  overflow: hidden;
+  white-space: nowrap;
 }
 .card_options .options_content .price {
   display: flex;

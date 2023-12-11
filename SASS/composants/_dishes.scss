@@ -7,11 +7,14 @@
 
 .card_options {
     display: flex;
+    position: relative;
     background-color: white;
+    min-height: 71px;
+    max-height: 71px;
     min-width: 320px;
     max-width: 634px;
     border-radius: 20px;
-    padding: 13px;
+    
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     
 
@@ -19,13 +22,22 @@
         display: flex;
         justify-content: space-between;
         align-items:end;
+        padding: 13px;
         width: 100%;
         
         .options_txt {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
+            display: block;
             width: 100%;
+
+            h3 {
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            
+            p {
+                overflow: hidden;
+                white-space: nowrap;
+            }
         }
 
         .price {
