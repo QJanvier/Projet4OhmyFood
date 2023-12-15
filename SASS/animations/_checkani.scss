@@ -1,6 +1,24 @@
-.check {
-    display: none;
+@keyframes slide-left {
+    from {
+        transform: translateX(100%);
+    }
+    
+    to {
+        transform: translateX(0%);
+    }
 }
+
+
+@keyframes slide-right {
+    from {
+        transform: translateX(0%);
+    }
+    
+    to {
+        transform: translateX(100%);
+    }
+}
+
 
 .card_options {
 
@@ -20,12 +38,17 @@
             }
         }
 
-        .check {
+        .options_content {
+            .price {
+            animation: 0.8s slide-left ;
+            padding-left: 0;
+            padding-right: 0;
+            }
+            .check {
             display: block;
-            animation: alternate;
-            transition: all 1s ease-in-out;
-            
+            animation: 0.8s slide-left ;            
+            }
         }
-    
+        
     }
 }

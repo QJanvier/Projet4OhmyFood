@@ -75,22 +75,6 @@
     }
 }
 
-.check {
-    background-color: var(--tertia-color);
-    border: none;
-    border-radius: 0 25% 25% 0;
-    margin-left: 5px;
-    min-width: 59px;
-    min-height: 71px;
-
-    i {
-        border-radius: 50%;
-        background-color: white;
-        padding: 2px;
-        color: var(--tertia-color);
-    }
-}
-
 
 .order {
     display: flex;
