@@ -14,9 +14,23 @@
 
         .section_title {
             display: flex;
-            padding-left: 62px;
+            padding-left: 30px;
         }
 
     }
 }
 
+
+@media (min-width: 1025px) {
+    .restaurants {
+        align-items: center;
+        .restaurants_box {
+            display: flex;
+            flex-direction: column;
+            max-width: 1024px;
+        }
+        .section_title {
+            padding-left: 20px;
+        }
+    }
+}
