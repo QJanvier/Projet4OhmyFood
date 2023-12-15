@@ -1,10 +1,10 @@
 @keyframes slide-left {
     from {
-        transform: translateX(100%);
+        margin-right: -75px;
     }
     
     to {
-        transform: translateX(0%);
+        margin-right: 0px;
     }
 }
 
@@ -46,6 +46,7 @@
             }
             .check {
             display: block;
+            margin-right: 0px;
             animation: 0.8s slide-left ;            
             }
         }
