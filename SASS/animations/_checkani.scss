@@ -8,14 +8,13 @@
     }
 }
 
-
 @keyframes slide-right {
     from {
-        transform: translateX(0%);
+        margin-right: 0px;
     }
     
     to {
-        transform: translateX(100%);
+        margin-right: -75px;
     }
 }
 
@@ -40,16 +39,36 @@
 
         .options_content {
             .price {
-            animation: 0.8s slide-left ;
+            animation: 0.4s slide-left forwards ease-in-out;
             padding-left: 0;
             padding-right: 0;
             }
             .check {
-            display: block;
             margin-right: 0px;
-            animation: 0.8s slide-left ;            
+            animation: 0.8s slide-left forwards ease-in-out;        
             }
         }
         
+    }
+}
+
+
+@media (min-width: 450px) {
+    .card_options {
+
+        &:hover {
+            
+            .options_txt {
+                
+    
+                h3 {
+                    max-width: 290px;
+                }
+    
+                p {
+                    max-width: 290px;
+                }
+            }            
+        }
     }
 }
