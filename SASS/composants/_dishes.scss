@@ -1,3 +1,20 @@
+.dishes {
+    opacity: 0;
+
+    &.appetizer {
+        animation: apparition 0.4s forwards;
+    }
+
+    &.meal {
+        animation: apparition 1.4s forwards;
+    }
+
+    &.dessert {
+        animation: apparition 2.4s forwards;
+    }
+}
+
+
 .dishes_options {
     display: flex;
     flex-direction: column;
@@ -8,6 +25,7 @@
 .card_options {
     display: flex;
     position: relative;
+    cursor: pointer;
     background-color: white;
     min-height: 71px;
     max-height: 71px;
@@ -47,7 +65,6 @@
             width: 13%;
             padding: 17px;
             padding-left: 0;
-            
         }
 
         .check {
@@ -59,7 +76,7 @@
             margin-right: -75px;
             min-width: 59px;
             min-height: 71px;
-            transition: transform 0.8s ease-in-out;
+            animation: slide-right 0.8s forwards ease-in-out;
             
             
         
