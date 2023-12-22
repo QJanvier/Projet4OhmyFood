@@ -9,15 +9,22 @@
     margin-bottom: -55px;
 }
 
-.title {
+.title_box {
     display: flex;
     align-items: center;
-    position: relative;
     padding: 10px 0px 15px 0px;
+
+    .title {
+        display: flex;
+        position: relative;
+        max-width: 345px;
+        min-width: 345px;
+    }
 
     .like {
         position: absolute;
-        right: 20px;
+        right: 45px;
+        top: 30%;
     }
 
     
@@ -87,35 +94,32 @@
     }
 }
 
+@media (max-width:365px) {
 
-@media (max-width: 365px) {
-    
-    .title {
-        
-        i {
-            position: absolute;
-            right: 0px;
-            bottom: 5px;
+    .title_box {
+
+        .title {
+            max-width: 345px;
+            min-width: 250px;
         }
-    
-        
     }
 }
+
 
 @media (min-width: 769px) {
     .menu {
         max-width: 1050px;
 
-        .title {
+        .title_box {
             width: 100%;
             justify-content: center;
 
-            h1 {
-                position: relative;
+            .title {
+                justify-content: center;
             }
 
-            i {
-                right: 28%;
+            .like {
+                right: 10px;
             }
         }
 

@@ -12,6 +12,29 @@
     left: 0;
   }
 }
+.loader_box {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  animation: fadeOut 0.5s ease-out 3s forwards;
+}
+.loader_box .loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  right: 50%;
+  top: 30%;
+  z-index: 9999;
+  background-image: linear-gradient(#ff79da 16px, transparent 0), linear-gradient(#9356dc 16px, transparent 0), linear-gradient(#9356dc 16px, transparent 0), linear-gradient(#ff79da 16px, transparent 0);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: left top, left bottom, right top, right bottom;
+  animation: rotate 1s linear 3, fadeOut 0.5s ease-out 3s forwards;
+  transition: opacity 0.5s linear 2.5s;
+}
+
 @keyframes rotate {
   0% {
     width: 64px;
@@ -27,6 +50,13 @@
     width: 64px;
     height: 64px;
     transform: rotate(360deg);
+  }
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
   }
 }
 @keyframes apparition {
@@ -148,12 +178,6 @@
   display: flex;
   justify-content: center;
   width: 15%;
-}
-.return button {
-  display: flex;
-  justify-content: center;
-  border: none;
-  background-color: white;
   font-size: 25px;
 }
 
@@ -374,15 +398,21 @@ footer .footer_box {
   margin-bottom: -55px;
 }
 
-.title {
+.title_box {
   display: flex;
   align-items: center;
-  position: relative;
   padding: 10px 0px 15px 0px;
 }
-.title .like {
+.title_box .title {
+  display: flex;
+  position: relative;
+  max-width: 345px;
+  min-width: 345px;
+}
+.title_box .like {
   position: absolute;
-  right: 20px;
+  right: 45px;
+  top: 30%;
 }
 
 .all_menu {
@@ -442,25 +472,24 @@ footer .footer_box {
 }
 
 @media (max-width: 365px) {
-  .title i {
-    position: absolute;
-    right: 0px;
-    bottom: 5px;
+  .title_box .title {
+    max-width: 345px;
+    min-width: 250px;
   }
 }
 @media (min-width: 769px) {
   .menu {
     max-width: 1050px;
   }
-  .menu .title {
+  .menu .title_box {
     width: 100%;
     justify-content: center;
   }
-  .menu .title h1 {
-    position: relative;
+  .menu .title_box .title {
+    justify-content: center;
   }
-  .menu .title i {
-    right: 28%;
+  .menu .title_box .like {
+    right: 10px;
   }
   .menu .all_menu {
     width: 100%;
@@ -643,12 +672,15 @@ footer .footer_box {
 }
 .card_options .options_content {
   display: flex;
-  justify-content: space-between;
+  position: relative;
+  justify-content: flex-end;
   align-items: end;
   width: 100%;
 }
 .card_options .options_content .options_txt {
   display: block;
+  position: absolute;
+  left: 0;
   width: 100%;
   padding: 13px;
 }
