@@ -41,6 +41,12 @@
         }
     }
 
+    &:hover {
+
+        i {
+            color: var(--main-color);
+        }
+    }
 
     p{
         font-size: 16px;
@@ -50,8 +56,11 @@
         padding-left: 15px;
         width: 13px;
         color: grey;
+
+        
     }
 }
+
 
 
 

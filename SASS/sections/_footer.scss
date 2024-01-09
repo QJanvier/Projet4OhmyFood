@@ -45,25 +45,34 @@ footer {
     footer {
         padding: 50px;
         padding-bottom: 25px;
+        padding-left: 25px;
     }
 
 
     footer .footer_box {
         flex-direction: row-reverse;
         align-items: end;
-        justify-content: end;
-        justify-content: space-between;
+        justify-content: space-between;        
 
     }
 
     .logo_footer h4 {
         padding: 0;
+        padding-left: 10px;
     }
 
     .footer_link {
         flex-direction: row;
         width: 85%;
-        justify-content: end;
+        justify-content: center;
+        gap: 10px;
+    }
+}
 
+@media (min-width: 900px) {
+
+    .footer_link {
+        justify-content: end;
+        gap: 15px;
     }
 }
